@@ -18,7 +18,6 @@ function App() {
     let dy = (Math.sqrt(mouseY**2 - imageCenterY**2))/30;
     console.log(dx)
 
-    // if ()
     backgroundImgElem[0].style.right = imageCenterX + dx + "px";
     // backgroundImgElem[0].style.top = imageCenterY + dy + "px";
   }
