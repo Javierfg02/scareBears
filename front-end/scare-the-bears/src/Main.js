@@ -12,8 +12,6 @@ export const TEXT_number_2_accessible_name = "second number in sequence";
 export const TEXT_number_3_accessible_name = "third number in sequence";
 export const TEXT_try_button_text = "Try it!";
 
-
-
 // Remember that parameter names don't necessarily need to overlap;
 // I could use different variable names in the actual function.
 // interface ControlledInputProps {
@@ -50,13 +48,8 @@ function OldRound({guess}) {
       <p>{guess}</p>
     </div>
   );
-  
 }
 
-// interface NewRoundProps {
-//   addGuess: (guess: string[]) => any;
-//   setNotification: Dispatch<SetStateAction<string>>;
-// }
 // You can also mix the interface (as type) with concrete field names, like this:
 function NewRound({ addGuess}) {
   // Remember: let React manage state in your webapp. The current guesses are string fields.
@@ -108,7 +101,7 @@ export default function Main() {
 
   return (
     <div className="App">
-        <OldRound guess={data} />
+      <OldRound guess={data} />
       <NewRound
         addGuess={(guess) => {
           Gpt3(guess)?.then((r) => setData(r.data.choices[0].text))

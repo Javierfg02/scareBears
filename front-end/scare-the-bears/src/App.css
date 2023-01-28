@@ -71,9 +71,40 @@ body::-webkit-scrollbar {
 
 .generator-container {
   grid-area: generator;
+  z-index: 1;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
-.searchBar {
+.Bar fieldset{
+  background: #ffeecad8;
+  border:none;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.Bar fieldset input{
+  border:none;
+  background:none;
+  outline: none;
+}
+
+
+
+/* .generator-container searchBar{
+  position:absolute;
+  display: flex;
+  width:auto;
+  text-align: center;
+  width: auto;
+  height: 50px;
+} */
+
+
+
+/* .searchBar {
   top:60%;
   position: absolute;
   width: 45%;
@@ -104,4 +135,4 @@ body::-webkit-scrollbar {
 
 #searchQuerySubmit:hover {
   cursor: pointer;
-}
+} */

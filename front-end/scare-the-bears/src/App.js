@@ -37,14 +37,14 @@ function App() {
         onMouseMove={(e) => moveImage(e)}
       >
         <img src={backgroundImg}></img>
-        <h1>Scare <span>The</span> Bears</h1>
-      
-        <Main></Main>
+        <h1>Scare The Bears</h1>
+        {/* <Main></Main> */}
       </div>
-
 
       <div className="generator-container">
+        <Main></Main>
       </div>
+      
     </div>
   );
 }
