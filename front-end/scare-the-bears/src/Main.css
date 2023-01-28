@@ -4,18 +4,9 @@
 
   }
 
-<<<<<<< HEAD
-  .searchBar {
-    position: relative;
-    display: flex;
-    width: 100%;
-    width: auto;
-=======
-
   .Bar fieldset{
     background: #ffeecad8;
     border:none;
->>>>>>> f881a40d6a4db8093ed06f438741246d91650fe0
     height: 50px;
     border-radius: 20px;
     width:50vw;
@@ -37,49 +28,6 @@
     padding: 0px 10px 0px 10px;
     width:50vw;
   }
-
-<<<<<<< HEAD
-
-.search {
-    width: 100%;
-    height: 50px;
-    background: #ffeecad8;
-    outline: none;
-    border: none;
-    border-radius: 20px;
-    padding: 0 3.5rem 0 1.5rem;
-    font-size: 16px;
-}
-
-.Bar fieldset{
-    width: 70vw;
-    height: 50px;
-}
-
-
-.Button button{
-    width: 3.5rem;
-    height: 2.8rem;
-    background: none;
-    border-radius: 20px;
-    outline: none;
-    cursor: pointer;
-}
-
-.guess-round-{
-    display: flex;
-    visibility: hidden;
-    background-color: #ffeecad8;
-    border-radius: 20px;
-    width:auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-  
-=======
   .Button button{
     cursor: pointer;
   }
-  
->>>>>>> f881a40d6a4db8093ed06f438741246d91650fe0

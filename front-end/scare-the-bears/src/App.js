@@ -37,13 +37,8 @@ function App() {
         onMouseMove={(e) => moveImage(e)}
       >
         <img src={backgroundImg}></img>
-<<<<<<< HEAD
         <h1>Scare The Bears</h1>
         {/* <Main></Main> */}
-=======
-        <h1>Scare <span>The</span> Bears</h1>
-      
->>>>>>> f881a40d6a4db8093ed06f438741246d91650fe0
       </div>
 
       <div className="generator-container">
