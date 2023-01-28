@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+:root { 
+  --navbar-height: 58px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  background-color: #542C19;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none; /* hide scrollbar for firefox */
+  -ms-overflow-style: none; /* hide scrollbar for microsoft edge */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Hide scrollbars but keep functionality: Chrome, Safari, Opera */
+body::-webkit-scrollbar {
+  display: none; 
 }
 
-.App-link {
-  color: #61dafb;
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  "navbar"
+  "image"
+  "generator";
+  grid-template-columns: 1fr;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-container {
+  z-index: 10;
+  grid-area: navbar;
+  top: 0;
+  position: sticky;
+}
+
+.image-container {
+  grid-area: image;
+  width: 100vw;
+  height: 100vh;
+  max-height: calc(100vh - var(--navbar-height));
+}
+
+.generator-container {
+  grid-area: generator;
 }
