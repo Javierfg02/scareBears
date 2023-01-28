@@ -29,7 +29,7 @@ export const TEXT_try_button_text = "Try it!";
 function ControlledInput({ value, setValue, ariaLabel }) {
   return (
     <input className="search" 
-      placeholder="Type words to generate your scary story:"
+      placeholder="Type words to generate your scary story!"
       value={value}
       onChange={(ev) => setValue(ev.target.value)}
       aria-label={ariaLabel}

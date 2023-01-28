@@ -1,16 +1,18 @@
 * {
     box-sizing: border-box;
     font-family: 'Permanent Marker', cursive;
-
   }
 
+  .searchBar{
+    display: flex;
+  }
 
   .Bar fieldset{
     background: #ffeecad8;
     border:none;
     height: 50px;
     border-radius: 20px;
-    width:50vw;
+    width:55vw;
     
 }
   
@@ -27,10 +29,17 @@
     background: #ffeecad8;
     border-radius: 20px;
     padding: 0px 10px 0px 10px;
-    width:50vw;
+    width:55vw;
+    font-size: 20px;
   }
 
   .Button button{
+    font-size: 18px;
     cursor: pointer;
+    border:none;
+    background: #ffeecad8;
+    text-align: center;
+    height: 50px;
+    border-radius: 20px;
   }
   
