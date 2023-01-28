@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import Main from './Main'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
           <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit"></button>
         </div>
       </div>
-
+      <Main/>
       <div className="generator-container">
      
       </div>
