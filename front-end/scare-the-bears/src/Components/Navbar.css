@@ -30,10 +30,10 @@ body {
 /* It must be the parent that is display:flex for the children to become flex items
  That is why we select the ul element to become a flex so that the child li elements
  become the flex items */
-.navbar-links ul {
+ .navbar-links ul {
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 .navbar-links li {

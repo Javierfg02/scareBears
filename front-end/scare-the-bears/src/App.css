@@ -1,10 +1,11 @@
 :root { 
   --navbar-height: 58px;
+  --navbar-color: #FFEECA;
+  --bg-color: #542C19;
 }
 
 * {
   box-sizing: border-box;
-  background-color: #542C19;
 }
 
 body {
@@ -33,6 +34,7 @@ body::-webkit-scrollbar {
   grid-area: navbar;
   top: 0;
   position: sticky;
+  background-color: var(--bg-color);
 }
 
 .image-container {
@@ -40,6 +42,7 @@ body::-webkit-scrollbar {
   width: 100vw;
   height: 100vh;
   max-height: calc(100vh - var(--navbar-height));
+  background-color: var(--bg-color);
 }
 
 .generator-container {
