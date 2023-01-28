@@ -1,7 +1,6 @@
 import React from 'react';
 import './Navbar.css'
 
-
 function Navbar() {
   const navElem = document.getElementsByClassName("navbar");
   const navbarLinks = document.getElementsByClassName("navbar-links");
