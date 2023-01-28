@@ -53,9 +53,9 @@ body::-webkit-scrollbar {
 
 .image-container img{
   display: flex;
-  width:60%;
+  width:auto;
   top:5%;
-  height: 130%;
+  height: 120%;
   position:absolute;
   text-align: center;
 
@@ -74,3 +74,39 @@ body::-webkit-scrollbar {
 .generator-container {
   grid-area: generator;
 }
+
+.searchBar {
+  top:60%;
+  position: absolute;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 50px;
+  background: #ffeecad8;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 16px;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+

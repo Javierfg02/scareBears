@@ -12,6 +12,11 @@ function App() {
       <div className="image-container">
         <img src={backgroundImg}></img>
         <h1>Scare <span>The</span> Bears</h1>
+        
+        <div class="searchBar">
+          <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type words to generate your scary story!" value=""/>
+          <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit"></button>
+        </div>
       </div>
 
       <div className="generator-container">
