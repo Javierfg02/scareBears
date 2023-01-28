@@ -2,6 +2,8 @@
   --navbar-height: 58px;
   --navbar-color: #FFEECA;
   --bg-color: #542C19;
+  --img-offset-x: 0;
+  --img-offset-y: 0;
 }
 
 * {
@@ -82,7 +84,6 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
 }
 
 #searchQueryInput {
@@ -108,5 +109,3 @@ body::-webkit-scrollbar {
 #searchQuerySubmit:hover {
   cursor: pointer;
 }
-
-

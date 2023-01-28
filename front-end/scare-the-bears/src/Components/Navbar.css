@@ -48,17 +48,13 @@ body {
     display: block;
 }
 
-/* .navbar-links li:hover {
-    background-color: var(--hover-color);
-} */
-
 .navbar-links-list li a::after {
     display: block;
     position: relative;
     background-color: var(--hover-color);
     content: '';
     width: 0;
-    height: 3px;
+    height: 4px;
     bottom: -3px;
     transition: 0.5s;
 }
