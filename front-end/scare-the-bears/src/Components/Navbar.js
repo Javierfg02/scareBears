@@ -2,53 +2,51 @@ import React from 'react';
 import './Navbar.css'
 
 function Navbar() {
-  const navElem = document.getElementsByClassName("navbar");
-  const navbarLinks = document.getElementsByClassName("navbar-links");
-  const navbarLinksList = document.getElementsByTagName("li")
-  const root = document.getElementById("root");
+    const root = document.getElementById("root");
+    const navElem = document.getElementsByClassName("navbar");
+    const navbarLinks = document.getElementsByClassName("navbar-links");
+    const navbarLinksList = document.getElementsByTagName("li")
 
-  let scrolledOnce = false;
-  
-  // listen for scrolling events
-  window.addEventListener("scroll", animateNavbar);
-  
-  function animateNavbar() {
+    let scrolledOnce = false;
 
-    let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+    // listen for scrolling events
+    window.addEventListener("scroll", animateNavbar);
 
-    if (scrollPos == 0 && scrolledOnce == true) {
-      scrolledOnce = false;
-      navElem[0].style.animation = "navbarChangeBackgroundBack 0.2s linear 1 forwards"
-      for (let i = 0; i < navbarLinksList.length; i++) {
-        navbarLinksList[i].style.animation = "shiftNavbarBack 0.2s linear 1 forwards"
-      }
-      root.style.setProperty('--hover-color', 'rgba(40, 240, 165, 0.4)');
+    function animateNavbar() {
 
-    } else if (scrollPos >= 100) {
-      scrolledOnce = true;
-      navElem[0].style.animation = "navbarChangeBackground 0.2s linear 1 forwards"
-      for (let i = 0; i < navbarLinksList.length; i++) {
-        navbarLinksList[i].style.animation = "shiftNavbar 0.2s linear 1 forwards"
-      }
-      root.style.setProperty('--hover-color', 'rgb(85, 85, 85, 0.5)');
-    } 
-  }
+        let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
 
-  function smoothScroll(id) {
-    document.getElementById(id).scrollIntoView({behavior: "smooth"});
-  }
+        if (scrollPos == 0 && scrolledOnce == true) {
+            scrolledOnce = false;
+            navElem[0].style.animation = "navbarChangeBackgroundBack 0.2s linear 1 forwards"
+            for (let i = 0; i < navbarLinksList.length; i++) {
+                navbarLinksList[i].style.animation = "shiftNavbarBack 0.2s linear 1 forwards"
+            }
 
-  return (
-      <nav className="navbar">
+        } else if (scrollPos >= 100) {
+            scrolledOnce = true;
+            navElem[0].style.animation = "navbarChangeBackground 0.2s linear 1 forwards"
+            for (let i = 0; i < navbarLinksList.length; i++) {
+                navbarLinksList[i].style.animation = "shiftNavbar 0.2s linear 1 forwards"
+            }
+        } 
+    }
+
+    function smoothScroll(id) {
+        document.getElementById(id).scrollIntoView({behavior: "smooth"});
+    }
+
+    return (
+        <nav className="navbar">
         <div className="brand-title">Scare The Bears</div>
         <a  
-          className="toggle-button" 
-          onClick={() => {
-          navbarLinks[0].classList.toggle('active');
+            className="toggle-button" 
+            onClick={() => {
+            navbarLinks[0].classList.toggle('active');
         }}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
         </a>
         <div className="navbar-links">
           <ul className="navbar-links-list">
@@ -56,8 +54,9 @@ function Navbar() {
             <li><a onClick={() => {smoothScroll("about")}}>Generator</a></li> 
             <li><a onClick={() => {smoothScroll("about")}}>About</a></li> 
           </ul>
+
         </div>
-      </nav>
+        </nav>
     );
 }
 

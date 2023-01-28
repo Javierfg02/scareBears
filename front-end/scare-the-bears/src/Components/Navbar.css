@@ -30,10 +30,10 @@ body {
 /* It must be the parent that is display:flex for the children to become flex items
  That is why we select the ul element to become a flex so that the child li elements
  become the flex items */
-.navbar-links ul {
+ .navbar-links ul {
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 .navbar-links li {
@@ -53,35 +53,19 @@ body {
 } */
 
 .navbar-links-list li a::after {
+    display: block;
+    position: relative;
+    background-color: var(--hover-color);
     content: '';
     width: 0;
     height: 3px;
-    background: #5309bb;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
+    bottom: -3px;
     transition: 0.5s;
 }
 
 .navbar-links-list li a:hover::after {
     width: 100%;
 }
-
-
-/* nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #5309bb;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after{
-    width: 100%;
-} */
 
 .toggle-button {
     position: absolute;
