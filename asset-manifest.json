@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/front-end/scare-the-bears/src/App.js/static/css/main.65b47574.css",
-    "main.js": "/front-end/scare-the-bears/src/App.js/static/js/main.09732559.js",
-    "static/media/My project.png": "/front-end/scare-the-bears/src/App.js/static/media/My project.ec0ea3815f4cc46fc10f.png",
-    "index.html": "/front-end/scare-the-bears/src/App.js/index.html",
-    "main.65b47574.css.map": "/front-end/scare-the-bears/src/App.js/static/css/main.65b47574.css.map",
-    "main.09732559.js.map": "/front-end/scare-the-bears/src/App.js/static/js/main.09732559.js.map"
+    "main.css": "/scareBears/static/css/main.65b47574.css",
+    "main.js": "/scareBears/static/js/main.2ed5c03e.js",
+    "static/media/My project.png": "/scareBears/static/media/My project.ec0ea3815f4cc46fc10f.png",
+    "index.html": "/scareBears/index.html",
+    "main.65b47574.css.map": "/scareBears/static/css/main.65b47574.css.map",
+    "main.2ed5c03e.js.map": "/scareBears/static/js/main.2ed5c03e.js.map"
   },
   "entrypoints": [
     "static/css/main.65b47574.css",
-    "static/js/main.09732559.js"
+    "static/js/main.2ed5c03e.js"
   ]
 }
