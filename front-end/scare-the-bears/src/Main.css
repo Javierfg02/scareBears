@@ -3,20 +3,16 @@
     font-family: 'Permanent Marker', cursive;
 
   }
-
+/* 
   .searchBar{
     position:absolute;
     display: flex;
     width:auto;
     text-align: center;
-    width: 200%;
+    width: auto;
     height: 50px;
   }
 
-/* .Bar{
-    align-items: center;
-    border: none;
-} */
 
 .search{
     width: 200%;
@@ -35,24 +31,29 @@
     height: 50px;
     outline: none;
     border-radius: 20px;
-  /* padding: 0 3.5rem 0 1.5rem;
-  font-size: 16px;    */
-}
 
-/* .Button{
-    position: absolute;
-    float: right;
-} */
+}
 
 
 .Button button{
     width: 3.5rem;
     height: 2.8rem;
-    /* margin-left: -3.5rem; */
+
     background: none;
-    /* border: none; */
+
     border-radius: 20px;
     outline: none;
     cursor: pointer;
 }
+
+.guess-round-{
+    background-color: #ffeecad8;
+    border-radius: 20px;
+    display: flex;
+    width:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+} */
   

@@ -39,12 +39,14 @@ function App() {
         <img src={backgroundImg}></img>
         <h1>Scare <span>The</span> Bears</h1>
       
-        <Main></Main>
+        {/* <Main></Main> */}
       </div>
 
 
       <div className="generator-container">
+        <Main></Main>
       </div>
+      
     </div>
   );
 }

@@ -50,7 +50,6 @@ function OldRound({guess}) {
       <p>{guess}</p>
     </div>
   );
-  
 }
 
 // interface NewRoundProps {
@@ -63,7 +62,7 @@ function NewRound({ addGuess}) {
   // You don't always need the <...> annotation, but I like to include it for clarity.
   const [value0, setValue0] = useState ("");
   return (
-    <div className="searchBar">
+    <div className="searchBar" >
       <div className="Bar">
         {/* This is a comment within the JSX. Notice that it's a TypeScript comment wrapped in
           braces, so that React knows it should be interpreted as TypeScript */}
