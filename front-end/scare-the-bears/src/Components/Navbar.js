@@ -22,7 +22,6 @@ function Navbar() {
             for (let i = 0; i < navbarLinksList.length; i++) {
                 navbarLinksList[i].style.animation = "shiftNavbarBack 0.2s linear 1 forwards"
             }
-            root.style.setProperty('--hover-color', 'rgba(40, 240, 165, 0.4)');
 
         } else if (scrollPos >= 100) {
             scrolledOnce = true;
@@ -30,7 +29,6 @@ function Navbar() {
             for (let i = 0; i < navbarLinksList.length; i++) {
                 navbarLinksList[i].style.animation = "shiftNavbar 0.2s linear 1 forwards"
             }
-            root.style.setProperty('--hover-color', 'rgb(85, 85, 85, 0.5)');
         } 
     }
 
