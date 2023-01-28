@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css'
 
+
 function Navbar() {
     const root = document.getElementById("root");
     const navElem = document.getElementsByClassName("navbar");
@@ -52,7 +53,7 @@ function Navbar() {
           <ul className="navbar-links-list">
             <li><a onClick={() => {smoothScroll("home")}}>Home</a></li>
             <li><a onClick={() => {smoothScroll("about")}}>Generator</a></li> 
-            <li><a onClick={() => {smoothScroll("about")}}>About</a></li> 
+            <li><a to="/About" onClick={() => {smoothScroll("about")}}>About</a></li> 
           </ul>
 
         </div>
