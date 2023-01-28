@@ -48,9 +48,40 @@ body {
     display: block;
 }
 
-.navbar-links li:hover {
+/* .navbar-links li:hover {
     background-color: var(--hover-color);
+} */
+
+.navbar-links-list li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5309bb;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
 }
+
+.navbar-links-list li a:hover::after {
+    width: 100%;
+}
+
+
+/* nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5309bb;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+} */
 
 .toggle-button {
     position: absolute;

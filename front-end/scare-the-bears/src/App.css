@@ -6,6 +6,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Permanent Marker', cursive;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
   padding: 0;
   scrollbar-width: none; /* hide scrollbar for firefox */
   -ms-overflow-style: none; /* hide scrollbar for microsoft edge */
+  background-color: #542C19;
 }
 
 /* Hide scrollbars but keep functionality: Chrome, Safari, Opera */
@@ -43,6 +45,24 @@ body::-webkit-scrollbar {
   height: 100vh;
   max-height: calc(100vh - var(--navbar-height));
   background-color: var(--bg-color);
+  position: relative;
+}
+
+.image-container img{
+  width:auto;
+  height: 100%;
+  position:absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container h1{
+  position: absolute;
+  top: 50%;
+  width:100%;
+  text-align: center;
+  font-size: 18px;
 }
 
 .generator-container {
