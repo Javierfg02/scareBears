@@ -54,7 +54,7 @@ body {
     background-color: var(--hover-color);
     content: '';
     width: 0;
-    height: 3px;
+    height: 4px;
     bottom: -3px;
     transition: 0.5s;
 }
