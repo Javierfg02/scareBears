@@ -38,29 +38,35 @@ body::-webkit-scrollbar {
 }
 
 .image-container {
+  display: flex;
   grid-area: image;
   width: 100vw;
   height: 100vh;
   max-height: calc(100vh - var(--navbar-height));
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-container img{
-  width:auto;
-  height: 100%;
+  display: flex;
+  width:60%;
+  top:5%;
+  height: 130%;
   position:absolute;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+
 }
 
 .image-container h1{
   position: absolute;
-  top: 50%;
+  top: 30%;
   width:100%;
   text-align: center;
-  font-size: 18px;
+  font-size: 80px;
+  color:#FFEECA;
 }
+
 
 .generator-container {
   grid-area: generator;

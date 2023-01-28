@@ -19,10 +19,10 @@ body {
     background-color: var(--navbar-background-color);
     color: white;
     height: 1;
+    font-size:28px;
 }
 
 .brand-title {
-    font-size: 1.5rem;
     margin: 0.5rem;
     margin-left: 2rem;
 }

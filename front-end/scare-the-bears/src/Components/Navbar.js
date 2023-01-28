@@ -52,8 +52,9 @@ function Navbar() {
         </a>
         <div className="navbar-links">
           <ul className="navbar-links-list">
-            <li><a onClick={() => {smoothScroll("home")}}>HOME</a></li>
-            <li><a onClick={() => {smoothScroll("about")}}>GENERATOR</a></li> 
+            <li><a onClick={() => {smoothScroll("home")}}>Home</a></li>
+            <li><a onClick={() => {smoothScroll("about")}}>Generator</a></li> 
+            <li><a onClick={() => {smoothScroll("about")}}>About</a></li> 
           </ul>
         </div>
       </nav>

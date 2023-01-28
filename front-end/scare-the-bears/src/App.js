@@ -11,8 +11,11 @@ function App() {
       </div>
       <div className="image-container">
         <img src={backgroundImg}></img>
-        <h1>Scare The Bears</h1>
-        
+        <h1>Scare <span>The</span> Bears</h1>
+      </div>
+
+      <div className="generator-container">
+     
       </div>
     </div>
   );
