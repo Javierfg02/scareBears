@@ -1,7 +1,7 @@
 
 import React, { useState, Dispatch, SetStateAction, useEffect } from "react";
 import Gpt3 from "./Gpt3.js"
-import "./index.css"
+import './Main.css';
 
 // When we write tests, we'll be searching using accessible names. So let's
 // use the same constant identifier; that way if we decide to change the text
@@ -11,6 +11,7 @@ export const TEXT_number_1_accessible_name = "first number in sequence";
 export const TEXT_number_2_accessible_name = "second number in sequence";
 export const TEXT_number_3_accessible_name = "third number in sequence";
 export const TEXT_try_button_text = "Try it!";
+
 
 
 // Remember that parameter names don't necessarily need to overlap;
@@ -27,7 +28,8 @@ export const TEXT_try_button_text = "Try it!";
 //   so we have a special component that wraps the input box.
 function ControlledInput({ value, setValue, ariaLabel }) {
   return (
-    <input
+    <input className="search" 
+      placeholder="Type words to generate your scary story:"
       value={value}
       onChange={(ev) => setValue(ev.target.value)}
       aria-label={ariaLabel}
@@ -68,8 +70,8 @@ function NewRound({ addGuess}) {
 
         {/* I opted to use this HTML tag; you don't need to. It structures multiple input fields
           into a single unit, which makes it easier for screenreaders to navigate. */}
-        <fieldset >
-          <legend>Type words to generate your scary story:</legend>
+        <fieldset>
+          {/* <legend>Type words to generate your scary story:</legend> */}
           <ControlledInput
             value={value0}
             setValue={setValue0}
@@ -77,7 +79,8 @@ function NewRound({ addGuess}) {
           />
         </fieldset>
       </div>
-      <div>
+
+      <div className="Button">
         <button
           onClick={() => {
             // if (!isNaN(value0)) {
@@ -94,11 +97,12 @@ function NewRound({ addGuess}) {
           {TEXT_try_button_text}
         </button>
       </div>
+      
     </div>
   );
 }
 
-export default function Puzzle() {
+export default function Main() {
   const [guess, setGuesses] = useState("");
   const [data, setData] = useState ("");
 
