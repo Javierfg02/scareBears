@@ -1,6 +1,6 @@
 :root {
     --hover-color: #FFEECA;
-    --navbar-background-color: rgba(0, 0, 0, 0);
+    /* --navbar-background-color: rgba(0, 0, 0, 0); */
 }
 
 * {
@@ -16,7 +16,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--navbar-background-color);
     color: #FFEECA;
     height: 1;
     font-size:28px;
@@ -31,6 +30,7 @@ body {
  That is why we select the ul element to become a flex so that the child li elements
  become the flex items */
  .navbar-links ul {
+    cursor: pointer;
     display: flex;
     margin: 0;
     padding: 0;
@@ -117,12 +117,12 @@ body {
 /* Animation */
 @keyframes navbarChangeBackground {
     from { background-color: rgba(22, 14, 7, 0); }
-    to { background-color: #F5AD40;}
+    to { background-color: rgba(245, 173, 64, 0.25);}
 
 }
 
 @keyframes navbarChangeBackgroundBack {
-    from { background-color: rgba(51, 51, 51, 1); }
+    from { background-color: rgba(245, 173, 64, 0.25); }
     to { background-color: rgba(51, 51, 51, 0); }
 }
 

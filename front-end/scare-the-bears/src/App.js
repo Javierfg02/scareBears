@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import Main from './Main'
 
 function App() {
 
@@ -8,18 +9,20 @@ function App() {
 
   // Handling image animation against mouse
   function moveImage(e) {
-    let mouseX = e.clientX;
-    let mouseY = e.clientY;
+    const positions = [];
 
-    let imageCenterX = backgroundImgElem[0].getBoundingClientRect().x;
-    let imageCenterY = backgroundImgElem[0].getBoundingClientRect().y;
-
-    let dx = (Math.sqrt(mouseX**2 - imageCenterX**2))/30;
-    let dy = (Math.sqrt(mouseY**2 - imageCenterY**2))/30;
-    console.log(dx)
-
-    backgroundImgElem[0].style.right = imageCenterX + dx + "px";
-    // backgroundImgElem[0].style.top = imageCenterY + dy + "px";
+    const x = -(e.pageX + backgroundImgElem[0].offsetLeft) / 50;
+    const y = -(e.pageY + backgroundImgElem[0].offsetTop) / 50;
+    positions.push({ x, y });
+    const averageCount = 10;
+    if (positions.length > averageCount)
+      positions.splice(0, 1);
+      
+    const current = positions.reduce((acc, e) => { acc.x += e.x; acc.y += e.y; return acc }, { x: 0, y: 0 });
+    current.x /= positions.length;
+    current.y /= positions.length;
+    
+    backgroundImgElem[0].style.transform = `translateX(${current.x}px) translateY(${current.y}px)`;
   }
 
   return (
@@ -33,17 +36,14 @@ function App() {
       >
         <img src={backgroundImg}></img>
         <h1>Scare <span>The</span> Bears</h1>
-        
         <div className="searchBar">
           <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type words to generate your scary story!"/>
           <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit"></button>
         </div>
       </div>
-
+      <Main/>
       <div className="generator-container">
-     
       </div>
-
     </div>
   );
 }

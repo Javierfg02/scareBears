@@ -2,8 +2,6 @@
   --navbar-height: 58px;
   --navbar-color: #FFEECA;
   --bg-color: #542C19;
-  --img-offset-x: 0;
-  --img-offset-y: 0;
 }
 
 * {
@@ -42,28 +40,26 @@ body::-webkit-scrollbar {
 }
 
 .image-container {
-  display: flex;
   grid-area: image;
+  display: flex;
+  position: relative;
   width: 100vw;
   height: 100vh;
   max-height: calc(100vh - var(--navbar-height));
   background-color: var(--bg-color);
-  position: relative;
   align-items: center;
   justify-content: center;
 }
 
-.image-container img{
+.image-container img {
   display: flex;
-  width:auto;
-  top:5%;
-  height: 120%;
-  position:absolute;
-  text-align: center;
-
+  position: absolute;
+  width: auto;
+  top: 5%;
+  height: 120%;;
 }
 
-.image-container h1{
+.image-container h1 {
   position: absolute;
   top: 30%;
   width:100%;
