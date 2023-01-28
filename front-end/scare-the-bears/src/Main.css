@@ -4,14 +4,41 @@
 
   }
 
+<<<<<<< HEAD
   .searchBar {
     position: relative;
     display: flex;
     width: 100%;
     width: auto;
+=======
+
+  .Bar fieldset{
+    background: #ffeecad8;
+    border:none;
+>>>>>>> f881a40d6a4db8093ed06f438741246d91650fe0
     height: 50px;
+    border-radius: 20px;
+    width:50vw;
+    
+}
+  
+  .Bar fieldset input{
+    border:none;
+    background:none;
+    outline: none;
+    padding-top:4px;
+    font-size: 18px;
+    width:45vw;
+  }
+  
+  .guess-round-{
+    background: #ffeecad8;
+    border-radius: 20px;
+    padding: 0px 10px 0px 10px;
+    width:50vw;
   }
 
+<<<<<<< HEAD
 
 .search {
     width: 100%;
@@ -50,3 +77,9 @@
     align-items: center;
 }
   
+=======
+  .Button button{
+    cursor: pointer;
+  }
+  
+>>>>>>> f881a40d6a4db8093ed06f438741246d91650fe0
