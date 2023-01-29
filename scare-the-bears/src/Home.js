@@ -1,10 +1,10 @@
-import './App.css';
 import Navbar from './Components/Navbar';
 import Main from './Main'
+import "./Home.css"
 
-function App() {
+function Home() {
 
-  const backgroundImg = require("./media/My project.png");
+  const backgroundImg = require("/Users/javier/Library/Mobile Documents/com~apple~CloudDocs/Coding/Hack@Brown/scareBears/scare-the-bears/src/media/My project.png");
   const backgroundImgElem = document.getElementsByTagName('img'); // returns a collection
 
   // Handling image animation against mouse
@@ -48,4 +48,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default Home;

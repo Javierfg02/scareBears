@@ -3,27 +3,12 @@ import React, { useState, Dispatch, SetStateAction, useEffect } from "react";
 import Gpt3 from "./Gpt3.js"
 import './Main.css';
 
-// When we write tests, we'll be searching using accessible names. So let's
-// use the same constant identifier; that way if we decide to change the text
-// in the app, it won't break our tests.
 export const TEXT_try_button_accessible_name = "try your sequence";
 export const TEXT_number_1_accessible_name = "first number in sequence";
 export const TEXT_number_2_accessible_name = "second number in sequence";
 export const TEXT_number_3_accessible_name = "third number in sequence";
 export const TEXT_try_button_text = "Try it!";
 
-// Remember that parameter names don't necessarily need to overlap;
-// I could use different variable names in the actual function.
-// interface ControlledInputProps {
-//   value: string;
-//   // This type comes from React+TypeScript. VSCode can suggest these.
-//   //   Concretely, this means "a function that sets a state containing a string"
-//   setValue: Dispatch<SetStateAction<string>>;
-//   ariaLabel: string;
-// }
-
-// Input boxes contain state. We want to make sure React is managing that state,
-//   so we have a special component that wraps the input box.
 function ControlledInput({ value, setValue, ariaLabel }) {
   return (
     <input className="search" 
@@ -34,10 +19,6 @@ function ControlledInput({ value, setValue, ariaLabel }) {
     ></input>
   );
 }
-
-// We don't always need an interface for props; without one we need to use this
-// syntax, which expects an object with a "guess" field of string[] type.
-//   (This is NOT the same as accepting a string[]).
 
 function OldRound({guess}) {
   const [data, setData] = useState ("");
@@ -50,10 +31,7 @@ function OldRound({guess}) {
   );
 }
 
-// You can also mix the interface (as type) with concrete field names, like this:
 function NewRound({ addGuess}) {
-  // Remember: let React manage state in your webapp. The current guesses are string fields.
-  // You don't always need the <...> annotation, but I like to include it for clarity.
   const [value0, setValue0] = useState ("");
   return (
     <div className="searchBar">
