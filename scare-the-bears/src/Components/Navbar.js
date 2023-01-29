@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css'
 
-function Navbar( {setInstructionsVisibility} ) {
+function Navbar( props ) {
     const navElem = document.getElementsByClassName("navbar");
     const navbarLinks = document.getElementsByClassName("navbar-links");
     const navbarLinksList = document.getElementsByTagName("li")
@@ -32,7 +32,11 @@ function Navbar( {setInstructionsVisibility} ) {
     }
 
     function popUpInstructions() {
-        setInstructionsVisibility(true);
+        props.setInstructionsVisibility(true);
+    }
+
+    function popUpAbout() {
+        props.setAboutVisibility(true);
     }
 
     function smoothScroll(id) {
@@ -40,8 +44,8 @@ function Navbar( {setInstructionsVisibility} ) {
     }
 
     return (
-        <nav className="navbar" id="navbar">
-            <div className="brand-title">Scare The Bears</div>
+        <nav className="navbar">
+            <div id="navbar" className="brand-title">Scare The Bears</div>
                 <a  
                     className="toggle-button" 
                     onClick={() => {
@@ -53,9 +57,9 @@ function Navbar( {setInstructionsVisibility} ) {
                 </a>
             <div className="navbar-links">
                 <ul className="navbar-links-list">
-                    <li><a>Home</a></li>
+                    {/* <li><a onClick={smoothScroll("navbar")}>Home</a></li> */}
                     <li><a onClick={popUpInstructions}>Instructions</a></li>
-                    <li><a>About</a></li> 
+                    <li><a onClick={popUpAbout}>About</a></li> 
                 </ul>
             </div>
         </nav>

@@ -10,6 +10,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 function App() {
 
   const [instructionsVisibility, setInstructionsVisibility] = useState(false);
+  const [aboutVisibility, setAboutVisibility] = useState(false);
 
   const backgroundImg = require("/Users/javier/Library/Mobile Documents/com~apple~CloudDocs/Coding/Hack@Brown/scareBears/scare-the-bears/src/media/My project.png");
   const backgroundImgElem = document.getElementsByTagName('img'); // returns a collection
@@ -36,7 +37,10 @@ function App() {
       <div className="grid-container">
   
         <div className="navbar-container">
-          <Navbar setInstructionsVisibility={setInstructionsVisibility}></Navbar>
+          <Navbar 
+            setInstructionsVisibility={setInstructionsVisibility}
+            setAboutVisibility={setAboutVisibility}>
+          </Navbar>
         </div>
         
         <div 
@@ -53,6 +57,18 @@ function App() {
               } 
               icon={faXmark} 
               className="x-mark fa-2x"/>
+              <h2> Use your wildest imagination to type in a scary story and wait 10-15 seconds for it to generate</h2>
+            </Popup>
+            <Popup trigger={aboutVisibility}>
+            <h1 className="instructions-title">About us</h1>
+            <FontAwesomeIcon onClick={() => {
+
+              setAboutVisibility(false)}
+              } 
+              icon={faXmark} 
+              className="x-mark fa-2x"/>
+              <h2> We are the Scare Bears and completed the project "Scare the Bears" for 
+          Hack@Brown. We hope you enjoy your stories :)</h2>
             </Popup>
         </div>
   
