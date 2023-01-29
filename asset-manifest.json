@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Javierfg02/scareBears/tree/main/Scare%20the%20Bears/front-end/scare-the-bears/static/css/main.e5f517ba.css",
-    "main.js": "/Javierfg02/scareBears/tree/main/Scare%20the%20Bears/front-end/scare-the-bears/static/js/main.f63012d7.js",
-    "static/media/My project.png": "/Javierfg02/scareBears/tree/main/Scare%20the%20Bears/front-end/scare-the-bears/static/media/My project.ec0ea3815f4cc46fc10f.png",
-    "index.html": "/Javierfg02/scareBears/tree/main/Scare%20the%20Bears/front-end/scare-the-bears/index.html",
-    "main.e5f517ba.css.map": "/Javierfg02/scareBears/tree/main/Scare%20the%20Bears/front-end/scare-the-bears/static/css/main.e5f517ba.css.map",
-    "main.f63012d7.js.map": "/Javierfg02/scareBears/tree/main/Scare%20the%20Bears/front-end/scare-the-bears/static/js/main.f63012d7.js.map"
+    "main.css": "/Javierfg02/scareBears/static/css/main.e5f517ba.css",
+    "main.js": "/Javierfg02/scareBears/static/js/main.d8077572.js",
+    "static/media/My project.png": "/Javierfg02/scareBears/static/media/My project.ec0ea3815f4cc46fc10f.png",
+    "index.html": "/Javierfg02/scareBears/index.html",
+    "main.e5f517ba.css.map": "/Javierfg02/scareBears/static/css/main.e5f517ba.css.map",
+    "main.d8077572.js.map": "/Javierfg02/scareBears/static/js/main.d8077572.js.map"
   },
   "entrypoints": [
     "static/css/main.e5f517ba.css",
-    "static/js/main.f63012d7.js"
+    "static/js/main.d8077572.js"
   ]
 }
