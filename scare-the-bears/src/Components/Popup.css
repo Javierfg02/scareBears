@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+:root { 
+    --navbar-height: 58px;
+    --navbar-color: #FFEECA;
+    --bg-color: #542C19;
+    --instructions-color: #a87158;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .popup {
+    z-index: 5;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 30px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--navbar-color);
+    background-color: var(--instructions-color);
+  }
+
+  .popup-inner {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
+
+.instructions-title {
+    color: var(--navbar-color);
+}
+
+.x-mark {
+    display: inline;
+    position: relative;
+    color: var(--navbar-color);
+    top: 5px;
+    right: -120px;
+}

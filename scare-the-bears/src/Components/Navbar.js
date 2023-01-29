@@ -1,9 +1,7 @@
 import React from 'react';
 import './Navbar.css'
 
-
-function Navbar() {
-    const root = document.getElementById("root");
+function Navbar( {setInstructionsVisibility} ) {
     const navElem = document.getElementsByClassName("navbar");
     const navbarLinks = document.getElementsByClassName("navbar-links");
     const navbarLinksList = document.getElementsByTagName("li")
@@ -33,30 +31,33 @@ function Navbar() {
         } 
     }
 
+    function popUpInstructions() {
+        setInstructionsVisibility(true);
+    }
+
     function smoothScroll(id) {
         document.getElementById(id).scrollIntoView({behavior: "smooth"});
     }
 
     return (
-        <nav className="navbar">
-        <div className="brand-title">Scare The Bears</div>
-        <a  
-            className="toggle-button" 
-            onClick={() => {
-            navbarLinks[0].classList.toggle('active');
-        }}>
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
-        </a>
-        <div className="navbar-links">
-          <ul className="navbar-links-list">
-            <li><a onClick={() => {smoothScroll("home")}}>Home</a></li>
-            <li><a onClick={() => {smoothScroll("about")}}>Generator</a></li> 
-            <li><a onClick={() => {smoothScroll("about")}}>About</a></li> 
-          </ul>
-
-        </div>
+        <nav className="navbar" id="navbar">
+            <div className="brand-title">Scare The Bears</div>
+                <a  
+                    className="toggle-button" 
+                    onClick={() => {
+                    navbarLinks[0].classList.toggle('active');
+                }}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                </a>
+            <div className="navbar-links">
+                <ul className="navbar-links-list">
+                    <li><a>Home</a></li>
+                    <li><a onClick={popUpInstructions}>Instructions</a></li>
+                    <li><a>About</a></li> 
+                </ul>
+            </div>
         </nav>
     );
 }
