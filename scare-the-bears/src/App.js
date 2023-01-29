@@ -46,13 +46,13 @@ function App() {
           <img src={backgroundImg}></img>
           <h1>Scare The Bears</h1>
           <Popup trigger={instructionsVisibility}>
-            <h1 className="instructions-title">Intructions<span>
+            <h1 className="instructions-title">Intructions</h1>
             <FontAwesomeIcon onClick={() => {
 
               setInstructionsVisibility(false)}
               } 
               icon={faXmark} 
-              className="x-mark fa-2x"/></span></h1>
+              className="x-mark fa-2x"/>
             </Popup>
         </div>
   

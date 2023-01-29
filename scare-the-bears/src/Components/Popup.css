@@ -27,6 +27,7 @@
   }
 
   .popup-inner {
+    display: inline-flex;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
   }
@@ -36,9 +37,8 @@
 }
 
 .x-mark {
-    display: inline;
-    position: relative;
+    position: absolute;
     color: var(--navbar-color);
-    top: 5px;
-    right: -120px;
+    top: 2rem;
+    right: 3rem;
 }

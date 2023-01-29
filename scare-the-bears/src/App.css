@@ -82,7 +82,7 @@ body::-webkit-scrollbar {
 }
 
 .instructions {
-  display: flex;
+  display: inline;
   position: relative;
   text-align: center;
   background-color: white;
