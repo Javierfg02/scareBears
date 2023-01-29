@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/scareBears/static/css/main.011dc66c.css",
-    "main.js": "/scareBears/static/js/main.3362120a.js",
+    "main.css": "/scareBears/static/css/main.e5f517ba.css",
+    "main.js": "/scareBears/static/js/main.00d3a866.js",
     "static/media/My project.png": "/scareBears/static/media/My project.ec0ea3815f4cc46fc10f.png",
     "index.html": "/scareBears/index.html",
-    "main.011dc66c.css.map": "/scareBears/static/css/main.011dc66c.css.map",
-    "main.3362120a.js.map": "/scareBears/static/js/main.3362120a.js.map"
+    "main.e5f517ba.css.map": "/scareBears/static/css/main.e5f517ba.css.map",
+    "main.00d3a866.js.map": "/scareBears/static/js/main.00d3a866.js.map"
   },
   "entrypoints": [
-    "static/css/main.011dc66c.css",
-    "static/js/main.3362120a.js"
+    "static/css/main.e5f517ba.css",
+    "static/js/main.00d3a866.js"
   ]
 }
