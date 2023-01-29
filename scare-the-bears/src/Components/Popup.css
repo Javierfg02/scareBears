@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 
+
 :root { 
     --navbar-height: 58px;
     --navbar-color: #FFEECA;
     --bg-color: #542C19;
     --instructions-color: #a87158;
+    --about-image: url("/Users/javier/Library/Mobile Documents/com~apple~CloudDocs/Coding/Hack@Brown/scareBears/scare-the-bears/src/media/gang.png");
   }
   
   * {
@@ -18,7 +20,7 @@
     position: fixed;
     justify-content: center;
     width: 50vw;
-    min-height: 30vh;
+    min-height: 25vh;
     height: auto;
     border-radius: 30px;
     border-width: 3px;
@@ -28,7 +30,7 @@
   }
 
   .popup-inner {
-    display: inline-flex;
+    display: block;
     flex-wrap: wrap;
     font-size: 16px;
     padding-left: 3rem;
@@ -50,3 +52,29 @@
     h2 {
         color: var(--navbar-color);
     }
+
+    .row{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .column{
+        flex-basis: 60%;
+    }
+
+    .gang-img {
+        z-index: 10;
+        display: block;
+        position: relative;
+        width: 10%;
+        height: auto;
+      }
+
+      .about-image {
+        flex-basis: 35%;
+        width: 20vw;
+        height: 50vh;
+        background-image: var(--about-image);
+      }

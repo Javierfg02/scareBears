@@ -9,6 +9,8 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
 
+  const gangImg = require("/Users/javier/Library/Mobile Documents/com~apple~CloudDocs/Coding/Hack@Brown/scareBears/scare-the-bears/src/media/gang.png");
+
   const [instructionsVisibility, setInstructionsVisibility] = useState(false);
   const [aboutVisibility, setAboutVisibility] = useState(false);
 
@@ -67,8 +69,16 @@ function App() {
               } 
               icon={faXmark} 
               className="x-mark fa-2x"/>
-              <h2> We are the Scare Bears and completed the project "Scare the Bears" for 
-          Hack@Brown. We hope you enjoy your stories :)</h2>
+              <div className="row">
+                <div className='column'>
+                <h2> We are the Scare Bears and completed the project "Scare the Bears" for 
+                Hack@Brown. We hope you enjoy your stories :)</h2>
+                </div>
+                {/* <div className="about-img">
+                  <img className="gang-img" width='10px' height='10px' src={gangImg}></img>
+                </div> */}
+              </div>
+              
             </Popup>
         </div>
   
